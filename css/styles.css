@@ -3982,6 +3982,7 @@ input[type=button].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-weight: bolder;
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -6080,7 +6081,9 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-image: url('../img/login-bg.png');
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
