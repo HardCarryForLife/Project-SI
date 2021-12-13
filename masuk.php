@@ -73,7 +73,7 @@ require 'cek.php';
                                         <tbody>
                                             
                                             <?php
-                                            $ambilsemuadatastock = mysqli_query($conn,"select * from masuk m, stock s where s.idbarang = m.idbarang");
+                                            $ambilsemuadatastock = mysqli_query($conn,"SELECT * from masuk m, stock s where s.idbarang = m.idbarang");
                                             while($data=mysqli_fetch_array($ambilsemuadatastock)){
                                                 $idb = $data['idbarang'];
                                                 $idm = $data['idmasuk'];
@@ -141,7 +141,7 @@ require 'cek.php';
                                                             <div class="modal-body">
                                                             Apakah anda yakin ingin menghapus <?=$namabarang;?> ?
                                                             <input type="hidden" name="idb" value = "<?=$idb;?>">
-                                                            <input type="hidden" name="kty" value = "<?=$qty;?>">
+                                                            <input type="hidden" name="qty" value = "<?=$qty;?>">
                                                             <input type="hidden" name="idm" value = "<?=$idm;?>">
                                                             <br><br>
                                                             <button type="submit" class="btn btn-primary" name="hapusbarangmasuk">Hapus</button>
